@@ -1,0 +1,179 @@
+<head>
+	<link rel="icon" href="assets/favicon.png">
+	<title>AAron's Protfolio</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/bootstrap-icons.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="custom/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Quattrocento:wght@400;700&family=Spartan:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="about-body text-light">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark container-fluid">
+		<a class="navbar-brand main-font-bold" href="index.html">
+			<i class="bi bi-house nav-home-icon"></i> AAron Autin
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+					<a class="nav-link code-font" href="projects.html">
+						<i class="bi nav-bar-icon bi-cpu code-font"></i> Code
+					</a>
+				</li>
+				<li class="nav-item code-font">
+					<a class="nav-link" href="gallery.html">
+						<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
+					</a>
+				</li>
+				<li class="nav-item code-font active">
+					<a class="nav-link" href="about.html">
+						<i class="bi nav-bar-icon bi-person"></i> About
+					</a>
+				</li>
+				<li class="nav-item code-font">
+					<a class="nav-link" href="contact.html">
+						<i class="bi nav-bar-icon bi-envelope"></i> Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--'About' Heading-->
+	<div class="container-fliud animate__animated animate__fadeIn">
+
+		<div class="row">
+			<!-- Column 1: Social links & Educaton -->
+			<div class="text-center main-font-bold col-2 about-skills p-4 m-2">
+				<h4 class="lead d-md-none"> AAron Autin </h4>
+				<img class="img-thumbnail rounded circle" src="assets/profile-circle.png">
+				<div class="d-flex justify-content-center gap-4 m-4">
+					<a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+					<a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+					<a href="#" class="text-white"><i class="bi bi-github"></i></a>	
+				</div>
+				<hr>
+				<div class="d-flex row row-cols-1">
+					<div class="main-font-bold p-1">
+						<h3> Eduction: </h3>
+						<small class="main-font-sans"> 
+							Bachelor of Fine Art <br>
+							Mississippi State University <br>
+							Concentration in Painting & Sculpture
+						</small>
+					</div>
+					<div class="main-font-bold p-1">
+						<h3> Work History: </h3>
+						<small class="main-font-sans"> 
+							3 years software QA Analyst <br>
+							4 years professional driving
+						</small>
+					</div>
+				</div>
+				<hr>
+				<!-- Icons too be added 
+					<img src="assets/icon-react.png">
+					<img src="assets/icon-mongodb.png">
+					<img src="assets/icon-node.webp">
+					<img src="assets/icon-npm.png">
+					<img src="assets/icon-passport.png">
+					<img src="assets/icon-socketio.png"> 
+					-->
+
+				<!-- Icon container -->
+				<div>
+					<!-- Skills Icons -->
+					<h4 class="p-2">Skills:</h4>
+					<div class="d-flex row row-cols-5 g-2">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img class="about-icon" src="assets/icon-html5.png"></a>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="about-icon" src="assets/icon-css3.png"></a>
+						<a href="https://getbootstrap.com/"><img class="about-icon" src="assets/icon-bootstrap.png"></a>
+						<a href="https://github.com/"><img class="about-icon" src="assets/icon-gh.png"></a>
+					</div>
+
+					<!-- Language Icons -->
+					<h4 class="p-2">Languages:</h4>
+					<div class="d-flex row row-cols-5 g-2">
+						<a href="https://www.oracle.com/java/technologies/"><img class="about-icon" src="assets/icon-java.png"></a>
+						<a href="https://www.ruby-lang.org/en/"><img class="about-icon" src="assets/icon-ruby.png"></a>
+						<a href="https://www.javascript.com/"><img class="about-icon" src="assets/icon-js.png"></a>
+						<a href="https://docs.microsoft.com/en-us/dotnet/csharp/"><img class="about-icon" src="assets/icon-csharp.png"></a>
+						<a href="https://www.python.org/"><img class="about-icon" src="assets/icon-python.png"></a>	
+					</div>
+
+					<!-- Application Icons -->
+					<h4 class="p-2">Applications:</h4>
+					<div class="d-flex row row-cols-5 g-2">
+						<a href="https://www.gimp.org/"><img class="about-icon" src="assets/icon-gimp.png"></a>
+						<a href="https://unity.com/"><img class="about-icon" src="assets/icon-unity.png"></a>
+						<a href="https://www.blender.org/"><img class="about-icon" src="assets/icon-blender.png"></a>	
+					</div>
+				</div>
+			</div>
+			<!-- About Me: using Grid and Flex -->
+			<div class="text-light col-9">
+				<div class="row display-1 main-font"> 
+						<i class="bi bi-person-square about-main-icon py-2"> About</i>
+						<hr>
+				</div> 
+				<!-- Column 2: Name & Skills -->
+				<div class="about-info p-2">
+					<!-- Row 1: Name & Image -->
+					<div class="row main-font-sans">
+						<h3> PROLOGUE: </h3>
+						<p>Heartstring Salon -- date: n/a</p>
+						<p>
+							Ancient myths have said that when a person dies, they are visited by a man who helps to unburden them of thier lifes troubles and helps them move on to the realities beyond.  What form this man takes, however, is a hotly debated subject.  Some say he takes the form of an older gentleman in white robes standing before opulent gates in the clouds, or a half crazed and ragged man piloting a skiff across a river.  There are some who say, however, that its more of a place than a man.  Somewhere you want to go, where everybody knows your name.  And, where, they are always glad you came.  A place where you can see your troubles are all the same.
+						</p>
+						<p>
+							It is in such a place that we find an elderly man, amongst an assortmant of wine bottles.  His stature is rather sturdy, broad shouldered and tall, reminisant of an Olympic champion in the later years of his life.  He is snoozing drunkenly at the bar, while a man, dog, thing is tidying up behind the bar.  The bars only other patrons are a woman sitting alone in a booth with a light out above it, and a man seated at the opposite end of the bar from the snoozing man.  The woman has a quite ornate tea service whos porcilin is glazed to depict glorious battles between men with long, curved swords and of homes and fields with bountiful harvests and prosperous people.  Her clothes seem to writh and wiggle slightly, as if large masses of worms were hidden by them. The man at the end of the bar has a fine silk cloth laid out with all manner of gears and mechanical peices and a leather strap.  His attention is completely focused on inserting them into a small, cylendrical device.
+						</p>
+						<p>
+							"Ah, HA! There you are my OLD friend!" the silence is broken as the doors to the bar are thrust open as a middle aged man bursts in.  He is simalrly broad shouldered, tall, and musculed as the man who was once asleep at the bar.  The light from the setting sun, shines through his fire red hair, bathing the bar in a warm, red light as he scans the establishment with his non-patched eye. He nods to the other patrons while striding to the bar and seats himself next to the old man. He claps him on the back and exclaims.
+						</p> 
+						<p>
+							"Been looking high and low for you my fellow patriarch.  I have to say you do look worse for the wear.  They keeping you busy on that mount?"
+						</p>
+						<p>The old man grunts and drinks from a wine bottle.</p>
+						<p>
+							"I imagine they are keeping you quite busy.  I've just had to toss your brother back below for consorting with a rather nasty group of giants. Some sort of business about trading some knicknacks for some pets, or something like that. I didn't ask too many questions. You should keep a shorter leash on him, before he causes some real trouble." chided the fire haired man, knudgin him with his elbow.  He motioned to the bar tender, who produced a tall mug of ale.
+						</p>
+						<p>
+							"I don't need you flapping your Bar-Bar lips at me. I've been busting my ass all day tossing Giants off Olympus because that half-beast Loki thought it would be hilarous to let them crash our garden party. So don't talk to me about leash lengths till you got that giant-spawn bastard under controll." retorted the aged athelete.
+						</p>
+						<p>
+							With a flash of fire in the barbarian's eyes, he lowers his voice pointedly. "No need to be so testy, my aged friend. I was simply trying to make light of our families quirks."
+						</p>
+						<p>
+							All at once, the aged man stands up and smashes the bottle of wine over the counter, and brandishes it against the Norse warrior. "Don't you try to pull that diplomatic shit with me, you left handed, bearded bastard.  Your trying to pick a fight and I know it!"  As he stands his age melts away as his golden skin shines brightly.  He now looks like the Olympic Champion in his prime, ready to defeat all challengers to his title.
+						</p>
+						<p>
+							Everone's attention was on the men now, as the silence was shattered by the sudden outburst. "Woah, woah, woah, Calm down, my friend.  I had a much more civilized thing in mind."  With that Odin brandishes a baseball cap, puts it on, and stares at Zues.  Zues stares back for a moment, the bottle wavering slightly.  He then laughs heartily, drops the bottle, grabs a baseball bat and a new wine bottle.  Together they stroll out the bar, singing victory songs.
+						</p>
+						<p>
+							The other two patrons, Izamani and Ptah look at each other silently for a moment.  Ptah sighs "I guess well have to clean up their mess.", as they look around the bar.  Izamani nods knowingly.  They gather up their things and stroll out the bar together, leaving the ManDog to clean up the refuse.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="scripts/bootstrap.bundle.min.js"></script>	
+</body>

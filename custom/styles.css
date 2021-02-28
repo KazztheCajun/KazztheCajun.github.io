@@ -1,0 +1,107 @@
+
+/* Overall Styles */
+
+
+/* Class Selectors */
+
+.carousel-inner > .item > img 
+{ 
+	margin: auto; 
+}
+
+.nav-home-icon
+{
+	font-size: 32px;
+}
+
+.nav-bar-icon
+{
+	font-size: 20px;
+}
+
+.art-cover 
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3e514c;
+}
+
+.art-box:hover .art-cover 
+{
+  opacity: 1;
+}
+
+.art-body
+{
+	background-color: #7c3d2e;
+}
+
+.main-font
+{
+	font-family: 'Quattrocento', serif;
+	font-weight: 400;
+}
+
+.main-font-bold
+{
+	font-family: 'Quattrocento', serif;
+	font-weight: 700;
+}
+
+.main-font-sans
+{
+	font-family: 'Spartan', sans-serif;
+	font-weight: 400;
+}
+
+.main-font-sans-bold
+{
+	font-family: 'Spartan', sans-serif;
+	font-weight: 600;
+}
+
+.code-font
+{
+	font-family: 'Anonymous Pro', monospace;
+}
+
+.project-body
+{
+	background-color: #425d85;
+}
+
+.about-body
+{
+	background-color: #545d3e;
+}
+
+.about-skills
+{
+	background-color: #425359;
+}
+
+.about-info
+{
+	background-color: #413946;
+}
+
+.about-main-icon
+{
+	font-size: 64px;
+}
+
+.about-icon
+{
+	width: 48px;
+	height: 48px;
+}
+/* ID Selectors*/
+
+
+/* Specific Selectors */
+

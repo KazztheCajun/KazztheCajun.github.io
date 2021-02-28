@@ -1,36 +1,43 @@
-<html>
+<head>
+	<link rel="icon" href="assets/favicon.png">
+	<title>AAron's Protfolio</title>
 
-    <head>
-    	<title> KazztheCajun's Git Projects </title>
-    	<link rel="icon" href="assets/logo.png">
-    </head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-    	<h1>Welcome to my Git page!</h1>
-    	<p>
-            My name is AAron Autin and you can find my in progress and completed projects here.
-        </p>
-    	<p> Current Projects:</p>
-    	<ul>
-    		<li>
-    			<a href="https://github.com/KazztheCajun/GM_Helper" >GM Helper</a>
-                <p>
-                    A handy tool to help GMs track initiative and monster status effects.
-                </p>
-    		</li>
-    		<li>
-    			<a href="https://github.com/KazztheCajun/Pet_Food_Tracker">Pet Food Tracker</a>
-                <p>
-                    An app that will help you track your pets' caloric and nutritional health.
-                </p>
-    		</li>
-            <li>
-                <a href="https://kazzthecajun.github.io/Castle/">Castle</a>
-                <p>
-                    An interactive HTML game created for my Advanced Web Apps class.
-                </p>
-            </li>
-    	</ul>
-    </body>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-</html>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="custom/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Quattrocento&family=Spartan&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Background Image -->
+	<img class="position-absolute w-100 h-100" src="assets/main_bg.jpg">
+
+	<!-- Landing Page -->
+	<div class="container text-light bg-secondary position-relative justify-content-center align-items-center flex-column d-flex col-md-4 top-50">
+		<div class="animate__animated animate__slideInDown text-center">
+			<h1 class="display-4 main-font">AAron Autin</h1>
+			<p class="main-font-sans">Welcome to my portfolio.</p>
+		</div>
+		<div class="text-center animate__animated animate__flipInX animate__delay-1s m-2 code-font">
+			<button class="btn btn-outline-light" type="button" onclick="document.location='projects.html'">
+				<i class="bi bi-cpu"></i> Code</button>
+			<button class="btn btn-outline-light" type="button" onclick="document.location='gallery.html'">
+				<i class="bi bi-easel"></i> Art Gallery</button>
+			<button class="btn btn-outline-light" type="button" onclick="document.location='about.html'">
+				<i class="bi bi-person"></i> About</button>
+			<button class="btn btn-outline-light" type="button" onclick="document.location='contact.html'">
+				<i class="bi bi-envelope"></i> Contact</button>
+		</div>	
+	</div>
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="scripts/bootstrap.bundle.min.js"></script>	
+</body>
