@@ -18,151 +18,198 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Quattrocento:wght@400;700&family=Spartan:wght@400;600&display=swap" rel="stylesheet">
+
+	<script>
+		function openNav() 
+		{
+		  document.getElementById("sidebar").style.width = "250px";
+		}
+
+		function closeNav() 
+		{
+		  document.getElementById("sidebar").style.width = "0";
+		}
+	</script>
 </head>
 
 <body class="text-light project-body">
 
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark container-fluid">
-		<a class="navbar-brand main-font-bold" href="index.html">
-			<i class="bi bi-house nav-home-icon"></i> AAron Autin
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbar">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a class="nav-link code-font active" href="projects.html">
-						<i class="bi nav-bar-icon bi-cpu code-font"></i> Code
-					</a>
-				</li>
-				<li class="nav-item code-font">
-					<a class="nav-link" href="gallery.html">
-						<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
-					</a>
-				</li>
-				<li class="nav-item code-font">
-					<a class="nav-link" href="about.html">
-						<i class="bi nav-bar-icon bi-person"></i> About
-					</a>
-				</li>
-				<li class="nav-item code-font">
-					<a class="nav-link" href="contact.html">
-						<i class="bi nav-bar-icon bi-envelope"></i> Contact
-					</a>
-				</li>
-			</ul>
+	<!-- Nav Bar for widescreen -->
+	<nav class="navbar navbar-dark bg-dark d-none d-md-flex">
+		<div class="container-fluid">
+			<a class="navbar-brand main-font-bold" href="index.html">
+				<i class="bi bi-house nav-home-icon"></i> AAron Autin
+			</a>
+			<div class="navbar-nav ms-auto">
+				<ul class="navbar-nav flex-row">
+					<li class="nav-item p-1">
+						<a class="nav-link code-font active" href="projects.html">
+							<i class="bi nav-bar-icon bi-cpu code-font"></i> Projects
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="gallery.html">
+							<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="about.html">
+							<i class="bi nav-bar-icon bi-person"></i> About
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="contact.html">
+							<i class="bi nav-bar-icon bi-envelope"></i> Contact
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
-	<!-- Apps Portfolio -->
-	<div class="container animate__animated animate__bounceInRight">
-		<h1 class="display-2 mt-4 main-font">
-			<i class="bi bi-cpu"></i> Apps
-		</h1>
-		<hr>
-
-		<!-- START: Card Group -->
-		<div class="card-group gap-2">
-
-			<!-- Start: Card 1 -->
-			<div class="card bg-dark text-center p-2">
-				<!-- Card Header -->
-				<div class="card-header">
-					<img class="img-thumbnail rounded mx-auto" src="assets/gmhelper.png">	
-				</div>
-				<!-- Card Body -->
-				<div class="card-body">
-					<h3 class="card-title main-font-bold">GM Helper</h3>
-					<p class="card-text main-font-sans">This useful tool will help streamline your combat encounters by automatically sorting player and monster initiatives and tracking who's turn it is.  It also has a handy spot to track the damage/health of your monsters.  This is a work in progress, so new features will be added in the future, such as a debuff tracker and a trap/encounter generator to make your life even easier.</p>	
-				</div>
-				<!-- Card Footer -->
-				<a href="https://github.com/KazztheCajun/GM_Helper"><button class="main-font-sans-bold">Get it Here</button></a>
-			</div>
-			<!-- END:Card 1-->
-
-			<!-- Start: Card 1 -->
-			<div class="card bg-dark text-center p-2">
-				<!-- Card Header -->
-				<div class="card-header">
-					<img class="img-thumbnail rounded mx-auto" src="assets/Catstalkprey.jpg">	
-				</div>
-				<!-- Card Body -->
-				<div class="card-body">
-					<h3 class="card-title main-font-bold">Pet Food Tracker</h3>
-					<p class="card-text main-font-sans">An easy way to record and track the caloric and nutritional health of your pets and animals.</p>	
-				</div>
-				<!-- Card Footer -->
-				<a href="https://github.com/KazztheCajun/Pet_Food_Tracker"><button class="main-font-sans-bold">It's in Beta</button></a>
-			</div>
-			<!-- END:Card 1-->
-
+	<!-- Page Containter -->
+	<div class="container-fluid">
+		<!-- Sidebar for narrow screens -->
+		<div id="sidebar" class="sidenav d-md-none">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+				<i class="bi bi-arrow-bar-left"></i>
+			</a>
+			<a class="nav-home-icon main-font-bold" href="index.html">
+				<i class="bi bi-house nav-home-icon"></i> AAron Autin
+			</a>
+			<hr>
+			<a class="nav-link code-font active" href="projects.html">	
+				<i class="bi nav-bar-icon bi-cpu code-font"></i> Projects
+			</a>
+				<a class="code-font" href="gallery.html">
+				<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
+			</a>
+				<a class="code-font" href="about.html">
+				<i class="bi nav-bar-icon bi-person"></i> About
+			</a>
+				<a class="code-font" href="contact.html">
+				<i class="bi nav-bar-icon bi-envelope"></i> Contact
+			</a>
 		</div>
-		<!-- END:Card Group -->
-		<hr>
-	</div>
 
-	<!-- Games Portfolio -->
-	<div class="container animate__animated animate__bounceInLeft animate__delay-1s">
-		<h1 class="display-2 mt-4 main-font">
-			<i class="bi bi-cpu"></i> Games
-		</h1>
-		<hr>
-
-		<!-- START: Card Group -->
-		<div class="card-group gap-2">
-			<!-- Start: Card 1 -->
-			<div class="card bg-dark text-center p-2">
-				<!-- Card Header -->
-				<div class="card-header">
-					<img class="img-thumbnail" src="assets/Castle.jpg">	
-				</div>
-				<!-- Card Body -->
-				<div class="card-body">
-					<h3 class="card-title main-font-bold">Castle</h3>
-					<p class="card-text main-font-sans">Explore a decrepit castle deep in the Black Forest through a series of images and see if you can unlock it's secrets.  This was a fun exploration in creating a stateless game useing simple HTML, CSS, and JavaScript.</p>	
-				</div>
-				<!-- Card Footer -->
-				<div class="card-footer">
-					<a href="https://github.com/KazztheCajun/Pet_Food_Tracker"><button class="main-font-sans-bold">Play Here</button></a>	
-				</div>
-			</div>
-			<!-- END:Card 1-->
-
-			<!-- START:Card 2 -->
-			<div class="card bg-dark text-center p-2">
-				<!-- Card Header -->
-				<div class="card-header">
-					<img class="img-thumbnail" src="assets/bigtruck.png">	
-				</div>
-				<!-- Card Body -->
-				<div class="card-body">
-					<h3 class="card-title main-font-bold">Big Truck Rampage</h3>
-					<p class="card-text main-font-sans">This is a wider card with supporting text as a lead-in to additional content.This content is a little bit longer</p>	
-				</div>
-				<!-- Card Footer -->
-				<div class="card-footer">
-					<a href="#"><button class="main-font-sans-bold">It's not ready</button></a>	
-				</div>
-			</div>
-			<!-- END:Card 2 -->
+		<!-- Sidebar button -->
+		<div class="d-md-none container-fluid d-flex align-items-center">
+			<span class="bi bi-arrow-bar-right openbtn" onclick="openNav()"></span>
+			<span class="h1 ms-auto bi bi-cpu"></span>
+			<span class="h1 p-2"> Projects </span>
 		</div>
-		<!-- END:Card Group -->
-	<hr>
-	</div>
+		<hr class="d-md-none">
+		<!-- Apps Portfolio -->
+		<div class="container animate__animated animate__bounceInRight">
+			<h1 class="display-2 mt-4 main-font">
+				<i class="bi bi-file-earmark-code"></i> Apps
+			</h1>
+			<hr>
 
-	<!-- Pet Projects Portfolio -->
-	<div class="container animate__animated animate__bounceInRight animate__delay-2s">
-		<h1 class="display-2 mt-4 main-font">
-			<i class="bi bi-cpu"></i> Pet Projects
-		</h1>
+			<!-- START: Card Group -->
+			<div class="card-group gap-2">
+
+				<!-- Start: Card 1 -->
+				<div class="card bg-dark text-center p-2">
+					<!-- Card Header -->
+					<div class="card-header">
+						<img class="img-thumbnail rounded mx-auto" src="assets/gmhelper.png">	
+					</div>
+					<!-- Card Body -->
+					<div class="card-body">
+						<h3 class="card-title main-font-bold">GM Helper</h3>
+						<p class="card-text main-font-sans">
+							This useful tool will help streamline your combat encounters by automatically sorting player and monster initiatives and tracking who's turn it is.  It also has a handy spot to track the damage/health of your monsters.  This is a work in progress, so new features will be added in the future, such as a debuff tracker and a trap/encounter generator to make your life even easier.
+						</p>	
+					</div>
+					<!-- Card Footer -->
+					<a href="https://github.com/KazztheCajun/GM_Helper"><button class="main-font-sans-bold">Get it Here</button></a>
+				</div>
+				<!-- END:Card 1-->
+
+				<!-- Start: Card 1 -->
+				<div class="card bg-dark text-center p-2">
+					<!-- Card Header -->
+					<div class="card-header">
+						<img class="img-thumbnail rounded mx-auto" src="assets/Catstalkprey.jpg">	
+					</div>
+					<!-- Card Body -->
+					<div class="card-body">
+						<h3 class="card-title main-font-bold">Pet Food Tracker</h3>
+						<p class="card-text main-font-sans">An easy way to record and track the caloric and nutritional health of your pets and animals.</p>	
+					</div>
+					<!-- Card Footer -->
+					<a href="https://github.com/KazztheCajun/Pet_Food_Tracker"><button class="main-font-sans-bold">It's in Beta</button></a>
+				</div>
+				<!-- END:Card 1-->
+
+			</div>
+			<!-- END:Card Group -->
+			<hr>
+		</div>
+
+		<!-- Games Portfolio -->
+		<div class="container animate__animated animate__bounceInLeft animate__delay-1s">
+			<h1 class="display-2 mt-4 main-font">
+				<i class="bi bi-joystick"></i> Games
+			</h1>
+			<hr>
+
+			<!-- START: Card Group -->
+			<div class="card-group gap-2">
+				<!-- Start: Card 1 -->
+				<div class="card bg-dark text-center p-2">
+					<!-- Card Header -->
+					<div class="card-header">
+						<img class="img-thumbnail" src="assets/Castle.jpg">	
+					</div>
+					<!-- Card Body -->
+					<div class="card-body">
+						<h3 class="card-title main-font-bold">Castle</h3>
+						<p class="card-text main-font-sans">Explore a decrepit castle deep in the Black Forest through a series of images and see if you can unlock it's secrets.  This was a fun exploration in creating a stateless game useing simple HTML, CSS, and JavaScript.</p>	
+					</div>
+					<!-- Card Footer -->
+					<div class="card-footer">
+						<a href="https://github.com/KazztheCajun/Pet_Food_Tracker"><button class="main-font-sans-bold">Play Here</button></a>	
+					</div>
+				</div>
+				<!-- END:Card 1-->
+
+				<!-- START:Card 2 -->
+				<div class="card bg-dark text-center p-2">
+					<!-- Card Header -->
+					<div class="card-header">
+						<img class="img-thumbnail" src="assets/bigtruck.png">	
+					</div>
+					<!-- Card Body -->
+					<div class="card-body">
+						<h3 class="card-title main-font-bold">Big Truck Rampage</h3>
+						<p class="card-text main-font-sans">This is a wider card with supporting text as a lead-in to additional content.This content is a little bit longer</p>	
+					</div>
+					<!-- Card Footer -->
+					<div class="card-footer">
+						<a href="#"><button class="main-font-sans-bold">It's not ready</button></a>	
+					</div>
+				</div>
+				<!-- END:Card 2 -->
+			</div>
+			<!-- END:Card Group -->
 		<hr>
+		</div>
 
-		<!-- START: Card Group -->
-		<div class="card-group gap-2">
+		<!-- Pet Projects Portfolio -->
+		<div class="container animate__animated animate__bounceInRight animate__delay-2s">
+			<h1 class="display-2 mt-4 main-font">
+				<i class="bi bi-puzzle"></i> Pet Projects
+			</h1>
+			<hr>
+
+			<!-- START: Card Group -->
+			<div class="card-group gap-2"></div>
+				
+			<!-- END:Card Group -->
 			
-		<!-- END:Card Group -->
-		<hr>
+		</div>
 	</div>
 	<!-- Bootstrap Bundle with Popper -->
 	<script src="scripts/bootstrap.bundle.min.js"></script>	

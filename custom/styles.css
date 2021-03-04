@@ -4,10 +4,7 @@
 
 /* Class Selectors */
 
-.carousel-inner > .item > img 
-{ 
-	margin: auto; 
-}
+/* Navbars */
 
 .nav-home-icon
 {
@@ -18,6 +15,55 @@
 {
 	font-size: 20px;
 }
+
+/* borrowed sidebar CSS from W3 Schools page: https://www.w3schools.com/howto/howto_js_sidenav.asp */
+
+.sidenav 
+{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a 
+{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: grey;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 25px;
+}
+
+.openbtn
+{
+	font-size: 30px;
+	padding: 8px;
+}
+
+
+/* Gallery Page */
+
+.carousel-inner > .item > img 
+{ 
+	margin: auto; 
+}
+
+/* Art Page | Contains modified code found on https://www.w3schools.com/css/css3_images.asp */
 
 .art-cover 
 {
@@ -40,6 +86,43 @@
 {
 	background-color: #7c3d2e;
 }
+
+/* Code Projects page */
+
+.project-body
+{
+	background-color: #425d85;
+}
+
+/* About page */
+
+.about-body
+{
+	background-color: #545d3e;
+}
+
+.about-skills
+{
+	background-color: #425359;
+}
+
+.about-info
+{
+	background-color: #413946;
+}
+
+.about-main-icon
+{
+	font-size: 64px;
+}
+
+.about-icon
+{
+	width: 48px;
+	height: 48px;
+}
+
+/* fonts */
 
 .main-font
 {
@@ -70,38 +153,9 @@
 	font-family: 'Anonymous Pro', monospace;
 }
 
-.project-body
+/* ID selectors */
+
+a:hover 
 {
-	background-color: #425d85;
+  color: #f1f1f1;
 }
-
-.about-body
-{
-	background-color: #545d3e;
-}
-
-.about-skills
-{
-	background-color: #425359;
-}
-
-.about-info
-{
-	background-color: #413946;
-}
-
-.about-main-icon
-{
-	font-size: 64px;
-}
-
-.about-icon
-{
-	width: 48px;
-	height: 48px;
-}
-/* ID Selectors*/
-
-
-/* Specific Selectors */
-

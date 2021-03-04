@@ -18,42 +18,79 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Quattrocento:wght@400;700&family=Spartan:wght@400;600&display=swap" rel="stylesheet">
+	<script>
+		function openNav() 
+		{
+		  document.getElementById("sidebar").style.width = "250px";
+		}
+
+		function closeNav() 
+		{
+		  document.getElementById("sidebar").style.width = "0";
+		}
+	</script>
 </head>
 
 <body class="about-body text-light">
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark container-fluid">
-		<a class="navbar-brand main-font-bold" href="index.html">
-			<i class="bi bi-house nav-home-icon"></i> AAron Autin
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbar">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a class="nav-link code-font" href="projects.html">
-						<i class="bi nav-bar-icon bi-cpu code-font"></i> Code
-					</a>
-				</li>
-				<li class="nav-item code-font">
-					<a class="nav-link" href="gallery.html">
-						<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
-					</a>
-				</li>
-				<li class="nav-item code-font active">
-					<a class="nav-link" href="about.html">
-						<i class="bi nav-bar-icon bi-person"></i> About
-					</a>
-				</li>
-				<li class="nav-item code-font">
-					<a class="nav-link" href="contact.html">
-						<i class="bi nav-bar-icon bi-envelope"></i> Contact
-					</a>
-				</li>
-			</ul>
+
+	<!-- Nav Bar for widescreen -->
+	<nav class="navbar navbar-dark bg-dark d-none d-md-flex">
+		<div class="container-fluid">
+			<a class="navbar-brand main-font-bold" href="index.html">
+				<i class="bi bi-house nav-home-icon"></i> AAron Autin
+			</a>
+			<div class="navbar-nav ms-auto">
+				<ul class="navbar-nav flex-row">
+					<li class="nav-item p-1">
+						<a class="nav-link code-font active" href="projects.html">
+							<i class="bi nav-bar-icon bi-cpu code-font"></i> Projects
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="gallery.html">
+							<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="about.html">
+							<i class="bi nav-bar-icon bi-person"></i> About
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="contact.html">
+							<i class="bi nav-bar-icon bi-envelope"></i> Contact
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
+
+	<!-- Sidebar for narrow screens -->
+	<div id="sidebar" class="sidenav d-md-none">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+			<i class="bi bi-arrow-bar-left"></i>
+		</a>
+		<a class="nav-home-icon main-font-bold" href="index.html">
+			<i class="bi bi-house nav-home-icon"></i> AAron Autin
+		</a>
+		<hr>
+		<a class="nav-link code-font active" href="projects.html">	
+			<i class="bi nav-bar-icon bi-cpu code-font"></i> Projects
+		</a>
+			<a class="code-font" href="gallery.html">
+			<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
+		</a>
+			<a class="code-font" href="about.html">
+			<i class="bi nav-bar-icon bi-person"></i> About
+		</a>
+			<a class="code-font" href="contact.html">
+			<i class="bi nav-bar-icon bi-envelope"></i> Contact
+		</a>
+	</div>
+
+	<!-- Sidebar button -->
+	<i class="bi bi-arrow-bar-right openbtn d-md-none container-fluid" onclick="openNav()"></i>
 
 	<!--'About' Heading-->
 	<div class="container-fliud animate__animated animate__fadeIn">
