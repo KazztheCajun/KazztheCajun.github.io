@@ -118,8 +118,41 @@
 
 .about-icon
 {
-	width: 48px;
-	height: 48px;
+	width: 60px;
+	height: 60px;
+}
+
+.about-icon-wide
+{
+	width: 108px;
+	height: 60px;
+}
+
+/* Contact page | some elements adapted from: https://codepen.io/omascaros/pen/CBapm */
+
+.bodybg
+{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-content
+{
+  transform: scaleY(1);
+  background-color: #4da194;
+}
+
+.contact-icon
+{
+  font-size: 128px;
+}
+
+/* Blog Page */
+
+.blog-body
+{
+  background-color: #734b6d;
 }
 
 /* fonts */

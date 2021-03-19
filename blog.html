@@ -9,86 +9,113 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/bootstrap-icons.css">
+	<link rel="stylesheet" href="custom/styles.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="custom/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Quattrocento:wght@400;700&family=Spartan:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Scripts -->	
+	<script>
+		function openNav() 
+		{
+		  document.getElementById("sidebar").style.width = "250px";
+		}
+
+		function closeNav() 
+		{
+		  document.getElementById("sidebar").style.width = "0";
+		}
+	</script>
 </head>
 
-<body class="bg-danger text-light">
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-mid navbar-light bg-light container-fluid">
-		<a class="navbar-brand" href="index.html">
-			<i class="bi bi-house"></i> AAron Autin
-		</a>
-		<button class="navbar-toggler" data-bs-toggle="collapse" href="#navbar-options">
-			<i class="navbar-toggler-icon"></i>
-		</button>
-		<div class="collapse navbar-collapse" id="navbar-options">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="projects.html">
-						<i class="bi bi-code-slash"></i> Code
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="blog.html">
-						<i class="bi bi-chat-dots"></i> Blog
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">
-						<i class="bi bi-person"></i> About
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contact.html">
-						<i class="bi bi-envelope"></i> Contact
-					</a>
-				</li>
-			</ul>
+<body class="blog-body text-light">
+	<!-- Nav Bar for widescreen -->
+	<nav class="navbar navbar-dark bg-dark d-none d-md-flex">
+		<div class="container-fluid">
+			<a class="navbar-brand main-font-bold" href="index.html">
+				<i class="bi bi-house nav-home-icon"></i> AAron Autin
+			</a>
+			<div class="navbar-nav ms-auto">
+				<ul class="navbar-nav flex-row">
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="gallery.html">
+							<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="projects.html">
+							<i class="bi nav-bar-icon bi-cpu code-font"></i> Projects
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font active" href="blog.html">
+							<i class="bi nav-bar-icon bi-receipt"></i> Blog
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="about.html">
+							<i class="bi nav-bar-icon bi-person"></i> About Me
+						</a>
+					</li>
+					<li class="nav-item p-1">
+						<a class="nav-link code-font" href="contact.html">
+							<i class="bi nav-bar-icon bi-envelope"></i> Contact
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
-	<!--Blog Page-->
-	<div class="container mt-4">
-		<h1>
-			<i class="bi bi-chat-dots"></i> Blog
-		</h1>
+	<!-- Sidebar for narrow screens -->
+	<div id="sidebar" class="sidenav d-md-none">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+			<i class="bi bi-arrow-bar-left"></i>
+		</a>
+		<a class="nav-home-icon main-font-bold" href="index.html">
+			<i class="bi bi-house nav-home-icon"></i> AAron Autin
+		</a>
 		<hr>
+		<a class="code-font" href="gallery.html">
+			<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
+		</a>
+		<a class="code-font" href="projects.html">
+			<i class="bi nav-bar-icon bi-cpu code-font"></i> Projects
+		</a>
+		<a class="code-font active" href="blog.html">
+			<i class="bi nav-bar-icon bi-receipt"></i> Blog
+		</a>
+		<a class="code-font" href="about.html">
+			<i class="bi nav-bar-icon bi-person"></i> About Me
+		</a>
+		<a class="code-font" href="contact.html">
+			<i class="bi nav-bar-icon bi-envelope"></i> Contact
+		</a>
 	</div>
 
-	<!-- Carousel -->
-	<div id="blog-carousel" class="carousel slide" data-bs-ride="carousel" data_bs_interval="1000">
-		<!-- Carousel Menu -->
-		<ol class="carousel-indicators">
-			<li data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active"></li>
-			<li data-bs-target="#blog-carousel" data-bs-slide-to="1"></li>
-		</ol>
-		<!-- Carousel Body -->
-		<div class="carousel-inner text-center">
-			<!-- Slide 1 -->
-			<div id="slide-1" class="carousel-item active">
-				<img class="img-fluid" src="assets/bg-image.png">
-				<div class="carousel-caption">
-					<h5>Blog Post 1</h5>
-					<p>Sentence describe topic for blog article 1</p>
-					<button onclick="document.location='articles/article-01.html'"> Read More </button>	
-				</div>		
-			</div>
-			<!-- Slide 2 -->
-			<div id="slide-2" class="carousel-item">
-				<img class="img-fluid" src="assets/bg-image.png">
-				<div class="carousel-caption">
-					<h5>Blog Post 2</h5>
-					<p>Sentence describe topic for blog article 2</p>
-					<button onclick="document.location='articles/article-02.html'"> Read More </button>	
-				</div>		
-			</div>
+	<!-- Sidebar button -->
+	<div class="d-md-none d-flex align-items-center">
+		<span class="bi bi-arrow-bar-right openbtn" onclick="openNav()"></span>
+		<span class="display-2 ms-auto bi bi-receipt"></span>
+		<span class="display-2 p-2 main-font"> Blog </span>
+	</div>
+	<hr class="d-md-none">
+	<!--Blog Page-->
+	<div>
+		<!-- Header -->
+		<div class="d-none d-md-block d-flex m-2 align-items-center">
+			<span class="display-2 bi bi-receipt"></span>
+			<span class="display-2 p-2 main-font"> Blog </span>
+			<hr>
 		</div>
-		<!-- Carousel Controls -->
-		<a class="carousel-control-prev" href="#blog-carousel" role="button" data-bs-slide="prev">
-			<i class="carousel-control-prev-icon"></i>
-		</a>
-		<a class="carousel-control-next" href="#blog-carousel" role="button" data-bs-slide="prev">
-			<i class="carousel-control-next-icon"></i>
-		</a>
+
+
+
 	</div>
 	<!-- Bootstrap Bundle with Popper -->
 	<script src="scripts/bootstrap.bundle.min.js"></script>	

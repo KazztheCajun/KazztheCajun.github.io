@@ -44,7 +44,7 @@
 			<div class="navbar-nav ms-auto">
 				<ul class="navbar-nav flex-row">
 					<li class="nav-item p-1">
-						<a class="nav-link code-font" href="gallery.html">
+						<a class="nav-link code-font active" href="gallery.html">
 							<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
 						</a>
 					</li>
@@ -59,13 +59,13 @@
 						</a>
 					</li>
 					<li class="nav-item p-1">
-						<a class="nav-link code-font active" href="about.html">
+						<a class="nav-link code-font" href="about.html">
 							<i class="bi nav-bar-icon bi-person"></i> About Me
 						</a>
 					</li>
 					<li class="nav-item p-1">
 						<a class="nav-link code-font" href="contact.html">
-							<i class="bi nav-bar-icon bi-receipt"></i> Contact
+							<i class="bi nav-bar-icon bi-envelope"></i> Contact
 						</a>
 					</li>
 				</ul>
@@ -82,10 +82,10 @@
 			<i class="bi bi-house nav-home-icon"></i> AAron Autin
 		</a>
 		<hr>
-		<a class="code-font" href="gallery.html">
+		<a class="code-font active" href="gallery.html">
 			<i class="bi nav-bar-icon bi-easel"></i> Art Gallery
 		</a>
-		<a class="nav-link code-font active" href="projects.html">
+		<a class="code-font" href="projects.html">
 			<i class="bi nav-bar-icon bi-cpu code-font"></i> Projects
 		</a>
 		<a class="code-font" href="blog.html">
@@ -95,23 +95,23 @@
 			<i class="bi nav-bar-icon bi-person"></i> About Me
 		</a>
 		<a class="code-font" href="contact.html">
-			<i class="bi nav-bar-icon bi-person"></i> Contact
+			<i class="bi nav-bar-icon bi-envelope"></i> Contact
 		</a>
 	</div>
 
 	<!-- Sidebar button -->
 	<div class="d-md-none container-fluid d-flex align-items-center">
 		<span class="bi bi-arrow-bar-right openbtn" onclick="openNav()"></span>
-		<span class="h1 ms-auto bi bi-easel"></span>
-		<span class="h1 p-2"> Art Gallery </span>
+		<span class="display-2 ms-auto bi bi-easel"></span>
+		<span class="display-2 p-2 main-font"> Art Gallery </span>
 	</div>
 	<hr class="d-md-none">
 	<!--Carousel Container-->
-	<div class="container-fluid">
+	<div>
 		<!-- Header -->
-		<div class="d-none d-md-block container-fluid d-flex align-items-center">
-			<span class="h1 bi bi-easel"></span>
-			<span class="h1 p-2"> Art Gallery </span>
+		<div class="d-none d-md-block d-flex align-items-center m-2">
+			<span class="display-2 bi bi-easel"></span>
+			<span class="display-2 p-2 main-font"> Art Gallery </span>
 			<hr>
 		</div>
 		<!-- Carousel -->
@@ -126,13 +126,14 @@
 				<li data-bs-target="#gal-car" data-bs-slide-to="5"></li>
 			</ol>
 			<!-- Carousel Body -->
-			<div class="carousel-inner text-center">
+			<div class="carousel-inner text-center main-font-sans">
 				<!-- Start: Card 1 -->
 				<div id="slide-1" class="carousel-item p-2 art-box active">
-					<img class="col w-50 rounded-3 img-thumbnail" src="assets/O.jpg">
+					<img class="col w-50 rounded-3 img-thumbnail" src="assets/art/O.jpg">
 					<div class="container w-75 art-cover d-flex flex-column justify-content-center px-5"> 
 						<h1>O (Oxygen)</h1>
 						<h4>Materials: Acrylic + Gel Medium on Canvas</h4>
+						<h5>3' x 2'</h5>
 						<p>
 							Painted in the style of Gerhard Richter, this peice eschews shape and form to represent the contrasting properties
 							of this essential part of life as we know it.
@@ -141,10 +142,11 @@
 				</div>
 				<!-- Start: Card 2 -->
 				<div id="slide-2" class="carousel-item p-2 art-box">
-					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/Cl.png">
+					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/art/Cl.png">
 					<div class="container w-75 art-cover d-flex flex-column justify-content-center px-5"> 
 						<h1>Cl (Chlorine)</h1>
 						<h4>Materials: Acrylic Wash on Canvas</h4>
+						<h5>3' x 4'</h5>
 						<p>
 							Combining the process of watercolor with the vibrance and transparancy of acrylic paint, this peice represents the
 							wide variety of physical properties Cl and it's molecules can display.
@@ -153,10 +155,11 @@
 				</div>
 				<!-- Start: Card 3 -->
 				<div id="slide-3" class="carousel-item p-2 art-box">
-					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/O2.jpg">
+					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/art/O2.jpg">
 					<div class="container w-75 art-cover d-flex flex-column justify-content-center px-5"> 
 						<h1>O2 (Oxygen)</h1>
 						<h4>Materials: Acrylic + Gel on Canvas</h4>
+						<h5>3' x 4'</h5>
 						<p>
 							Painted in the style of Gerhard Richter, this peice eschews shape and form to represent the complementary properties
 							of this diverse element.  In the original, the top layer of green is much darker and cooler; however, due to how this particular pigment mixed with the gel I used, it was impossible to capture the hue with a variety of cameras.  I am a big fan of this happy accident, as it shows how subtle chemical changes can create unexpected results.
@@ -165,10 +168,11 @@
 				</div>
 				<!-- Start: Card 4 -->
 				<div id="slide-4" class="carousel-item p-2 art-box">
-					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/Silicon.png">
+					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/art/Silicon.png">
 					<div class="container w-75 art-cover d-flex flex-column justify-content-center px-5 pb-5"> 
 						<h1>Silicon</h1>
 						<h4>Materials: Acrylic + Sand on Canvas</h4>
+						<h5>3' x 4'</h5>
 						<p>
 							Part of a series of abstractions based on the physical properties of elements from the periodic table. This peice
 							explores the relationship between the primary component of dirt and rock, the forms they create, and the space they exist in.
@@ -177,10 +181,11 @@
 				</div>
 				<!-- Start: Card 5 -->
 				<div id="slide-5" class="carousel-item p-2 art-box">
-					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/P.jpg">
+					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/art/P.jpg">
 					<div class="container w-75 art-cover d-flex flex-column justify-content-center px-5"> 
 						<h1>P (Potassium)</h1>
 						<h4>Materials: Acrylic + String + Artificial Cobweb on Wood Panel</h4>
+						<h5>3' x 4'</h5>
 						<p>
 							An element in the series "Elementary Particles", created for the Chemisty Dept. of MSU.  They are a series of abstractions based on the physical properties of elements from the periodic table and the roles they play in natural cycles on the Earth.  This peice explores how P is the backbone of our Nucleic Acid (DNA, RNA, and mRNA) macromolecules, is bonded with Ca (Calcium) to create our bones, and also is the primary element that powers all life in the form of ATP (Adenosine Tri-Phosphate).
 						</p>
@@ -188,10 +193,11 @@
 				</div>
 				<!-- Start: Card 6 -->
 				<div id="slide-6" class="carousel-item p-2 art-box">
-					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/main_bg.jpg">
+					<img class="col w-50 border border-2 rounded-3 img-responsive" src="assets/art/main_bg.jpg">
 					<div class="container w-75 art-cover d-flex flex-column justify-content-center px-5"> 
 						<h1>Hg (Mercury)</h1>
 						<h4>Materials: Acrylic + Gel + Iradescent Medium on Wood Panel</h4>
+						<h5>3' x 4'</h5>
 						<p>
 							An element in the series "Elementary Particles", created for the Chemisty Dept. of MSU.  They are a series of abstractions based on the physical properties of elements from the periodic table and the roles they play in natural cycles on the Earth. This work explores the highly mutable nature of elemental HG. Existing as either an extremely volitile liquid or super soft solid, this element
 							is a physical manifestation of the chaos that is inherant to Earthly systems.
