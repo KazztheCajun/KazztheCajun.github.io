@@ -82,6 +82,11 @@
   opacity: 1;
 }
 
+.art-image
+{
+  box-shadow: 0 5px 20px 0 lightblue, 0 5px 20px 0 lightblue;
+}
+
 .art-body
 {
 	background-color: #7c3d2e;
@@ -145,7 +150,7 @@
 
 .contact-icon
 {
-  font-size: 128px;
+  font-size: 90px;
 }
 
 /* Blog Page */
